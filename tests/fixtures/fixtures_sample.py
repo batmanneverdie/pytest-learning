@@ -19,6 +19,7 @@ class Fruit:
 
 @pytest.fixture()
 def my_fruit():
+    print("\n# 我被执行了......")
     return Fruit("apple")
 
 
@@ -29,4 +30,8 @@ def fruit_basket(my_fruit):
 
 
 def test_my_fruit_in_basket(fruit_basket):
+    assert Fruit("apple") in fruit_basket
+
+
+def test_my_fruit_in_basket2(fruit_basket):
     assert Fruit("orange") in fruit_basket
