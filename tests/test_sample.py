@@ -12,5 +12,5 @@ def test_answer2():
 def ffftest_answer2():
     assert func(4) == 5
 
-def answer2_test():
+def answer_test():
     assert func(4) == 5
